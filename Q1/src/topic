@@ -1,0 +1,3 @@
+Discuss how lifting state up to a shared parent component can help when multiple sibling components depend on the same data.
+
+state upliftment is the process of sharing one component data to other sibling of the parent, in this case we need to first give state to parent of the child and from that parent the other child access the properties passed by its sibling component to parent using props drilling, to avoid this we can use context API, useReducer, or even redux too for directly accessing data to any component.

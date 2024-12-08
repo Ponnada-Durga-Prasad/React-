@@ -1,0 +1,4 @@
+Explain how useEffect can handle data fetching and how to avoid infinite loops with dependencies.
+
+mainly useEffect hook is used for component lifecycle managment, useEffect is used to person some functions whenever
+the component loads for the first time, we can use it to render when the state or props changes using dependency matrix, and also useEffect hook returns a cleanup function to clear the resources when the component is unmounted or its state changes. when we use empty dependency matrix, the body inside the useEffect runs only once when the component mounts. so we can use empty dependency matrix to fetch data from webserver.

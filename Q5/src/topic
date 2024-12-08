@@ -1,0 +1,3 @@
+Imagine the contacts are fetched from an external API. How would you integrate data fetching with useEffect and ensure the list updates correctly when new data is added?
+
+useEffect is used in react component lifecycle management, operations like fetching data must be performed when a component is mounted and updated to check the new user contacts, normally when we give empty state dependency array in useEffect, it only runs when the component mounted, to fetch the data whenever the developer updates the user details, we can use the user data in state dependency matrix to ensure that whenever the state in dependency array updates, the useEffect also executes.
